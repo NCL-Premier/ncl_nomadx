@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emerging Stars of Cricket Academy - Sixezz Kings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #00529b;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #003366;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #0074d9;
+    }
+    .container {
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .match-details {
+      display: none;
+      margin-top: 15px;
+      background-color: #e9f1ff;
+      padding: 15px;
+      border-radius: 6px;
+    }
+    .team-member {
+      display: inline-block;
+      width: 150px;
+      text-align: center;
+      margin: 10px;
+    }
+    .team-member img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+    .highlight {
+      background-color: #ffe066;
+      font-weight: bold;
+    }
+    .match-scheduled {
+      font-size: 18px;
+      font-weight: bold;
+      color: green;
+    }
+    .match-result {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .match-hover {
+      background-color: #d0e8ff;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 6px;
+    }
+    .match-hover:hover {
+      background-color: #b2d6ff;
+    }
+    .player-detail {
+      font-size: 14px;
+    }
+    .upcoming-matches {
+      margin-top: 40px;
+    }
+
+    .team-section {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .player-card {
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      background-color: #f2f2f2;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .player-card:hover {
+      transform: scale(1.03);
+      cursor: pointer;
+    }
+
+    .player-img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 15px;
+      object-fit: cover;
+      border: 2px solid #ddd;
+    }
+
+    .player-details {
+      flex: 1;
+    }
+
+    .player-details strong {
+      font-size: 16px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .player-details p {
+      margin: 2px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .rate {
+      color: #777;
+    }
+
+    .wicket-detail {
+      font-size: 13px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+   <header>
+    <h1>National Cricket League Premier</h1>
+    <h2>Team: NCL Nomads Team Members</h2>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="index.html">Upcoming Matches</a>
+    <a href="index.html">Past Results</a>
+    <a href="team.html">Teams-Info</a>
+  </nav>
+
+  <div class="team-section">
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Udit Goswami (C) :</strong><p>▸ Bowler & Batter</p>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Anurag Sharma (VC) :</strong><p>▸ Bowler & Batter</p>
+      </div>
+    </div>
+    
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Rohan Verma :</strong><p>▸ Batter</p>
+      </div>
+    </div>
+    
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Yuvrah Chauhan :</strong><p>▸ Batter</p>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Bhuvan Pandya :</strong><p>▸ Bowler</p>
+      </div>
+    </div>
+    
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Abeer Sharma :</strong><p>▸ Batter</p>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Ravi Patel :</strong><p>▸ Bowler</p>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Vikas Bhargab :</strong><p>▸ Bowler & Batter</p>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Ankit Rathi :</strong><p>▸ Batter</p>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Deepak Rawat :</strong><p>▸ Bowler</p>
+      </div>
+    </div>
+
+    <div class="player-card">
+      <img src="profile icon.jfif" class="player-img" alt="KL Rahul">
+      <div class="player-details">
+        <strong>Suraj Yadav :</strong><p>▸ Wicketkeeper-Batter</p>
+      </div>
+    </div>
+    <!-- Add more player-cards below as needed -->
+
+  <footer>
+    <p>&copy; 2025 Emerging Stars of Cricket Academy. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

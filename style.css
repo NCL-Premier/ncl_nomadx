@@ -1,0 +1,283 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light grey background */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #2c3e50; /* Dark blue/grey */
+    color: #ecf0f1; /* Light text */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #e74c3c; /* A contrasting red for the team name */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #e74c3c; /* Red highlight on hover */
+}
+
+/* Main Content Cards */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+    padding: 30px;
+}
+
+.card h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Live Score Section */
+#live-score .match-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#live-score .team-score h3 {
+    margin: 0 0 10px;
+    color: #34495e;
+    font-size: 1.8em;
+}
+
+#live-score .team-score p {
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #e74c3c;
+    margin: 0;
+}
+
+#live-score .vs {
+    font-size: 2em;
+    font-weight: bold;
+    color: #7f8c8d;
+}
+
+.match-status {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #3498db; /* Blue for status */
+    margin-top: 20px;
+}
+
+/* Score Controls (Admin) */
+.score-controls {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    border: 1px dashed #bdc3c7;
+}
+
+.score-controls h3 {
+    color: #34495e;
+    margin-bottom: 15px;
+}
+
+.score-controls label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.score-controls input[type="number"],
+.score-controls input[type="text"],
+.score-controls select {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 160px); /* Adjust width to fit */
+    max-width: 200px;
+}
+
+.score-controls button {
+    background-color: #27ae60; /* Green update button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.score-controls button:hover {
+    background-color: #229a54;
+}
+
+/* Upcoming Matches & Past Results */
+#upcoming-matches ul,
+#past-results .result-item {
+    list-style: none;
+    padding: 0;
+}
+
+#upcoming-matches li,
+.result-item {
+    background-color: #fcfcfc;
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#upcoming-matches li strong,
+.result-item strong {
+    color: #e74c3c;
+    margin-right: 5px;
+}
+
+.score-bold {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Team Info */
+#team-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+#team-info h3 {
+    color: #34495e;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #34495e;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #e74c3c;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+/* Add these styles to your style.css file */
+
+.countdown-display {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #e6f7ff; /* Light blue background */
+    border-radius: 8px;
+    border: 1px solid #cceeff;
+}
+
+.countdown-text {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.countdown-units {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.countdown-value {
+    font-size: 3em;
+    font-weight: 700;
+    color: #e74c3c; /* Your team's accent color */
+    display: block; /* Each value on its own line */
+    line-height: 1;
+}
+
+.countdown-label {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    display: block; /* Each label on its own line */
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+/* Ensure the match status for countdown looks good */
+#countdown-message {
+    margin-top: 25px;
+    font-size: 1.2em;
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Original styles below this line (no changes needed for existing ones) */
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Light grey background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Add this to your style.css */
+.admin-hidden {
+    display: none !important; /* Use !important to ensure it overrides other styles */
+}
+
+/* ... (rest of your existing style.css) ... */
+
+/* ... (rest of your existing style.css) ... */

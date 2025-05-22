@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCL Premier - Live Scores & Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>NCL Premier</h1>
+            <nav>
+                <ul>
+                    <li><a href="#live-score">Live Score</a></li>
+                    <li><a href="#upcoming-matches">Upcoming Matches</a></li>
+                    <li><a href="#past-results">Past Results</a></li>
+                    <li><a href="team.html">Team Info</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="live-score" class="card">
+            <h2>Current Match / Next Match Countdown</h2>
+            <div id="match-countdown" class="countdown-display">
+                <p class="countdown-text">Next match in:</p>
+                <div class="countdown-units">
+                    <span id="countdown-days" class="countdown-value">00</span> <span class="countdown-label">Days</span>
+                    <span id="countdown-hours" class="countdown-value">00</span> <span class="countdown-label">Hours</span>
+                    <span id="countdown-minutes" class="countdown-value">00</span> <span class="countdown-label">Minutes</span>
+                    <span id="countdown-seconds" class="countdown-value">00</span> <span class="countdown-label">Seconds</span>
+                </div>
+                <p id="countdown-message" class="match-status"></p>
+            </div>
+
+            <div id="live-match-display" style="display: none;">
+                <div class="match-card">
+                    <div class="team-score">
+                        <h3 id="team1-name">NCL Nomads</h3>
+                        <p><span id="team1-runs">0</span> / <span id="team1-wickets">0</span> (<span id="team1-overs">0.0</span> Overs)</p>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team-score">
+                        <h3 id="team2-name">Opponent Team</h3>
+                        <p><span id="team2-runs">0</span> / <span id="team2-wickets">0</span> (<span id="team2-overs">0.0</span> Overs)</p>
+                    </div>
+                </div>
+                <p class="match-status" id="match-status"></p>
+            </div>
+            <p><b>*Note:</b> At NCL Premier, we bring you live scores for every match in the series—not just our own. Stay updated with the full tournament action, every game, every moment.</p>
+
+            <div class="score-controls admin-hidden">
+                <h3>Update Score (Admin Only)</h3>
+                <label for="current-team">Update for:</label>
+                <select id="current-team">
+                    <option value="team1">NCL Nomads</option>
+                    <option value="team2">Opponent Team</option>
+                </select>
+                <br>
+                <label for="runs-input">Runs:</label>
+                <input type="number" id="runs-input" value="0" min="0">
+                <label for="wickets-input">Wickets:</label>
+                <input type="number" id="wickets-input" value="0" min="0" max="10">
+                <label for="overs-input">Overs (e.g., 5.3 for 5 overs 3 balls):</label>
+                <input type="text" id="overs-input" value="0.0">
+                <br>
+                <label for="match-status-input">Match Status:</label>
+                <input type="text" id="match-status-input" placeholder="e.g., Live, Innings break, NCL Nomads won by X runs">
+                <button id="update-score-btn">Update Score</button>
+                <hr style="margin-top:20px; border-color:#ccc;">
+                <button id="force-live-btn" style="background-color: #3498db;">Force Live Match Scoreboard (Overrides Countdown)</button>
+                <button id="revert-countdown-btn" style="background-color: #f39c12; display:none;">Revert to Countdown</button>
+                <p style="font-size:0.9em; color:#666; margin-top:10px;">
+                    Use "Force Live Match" to show the scoreboard immediately. Use "Revert to Countdown" to go back to countdown.
+                    Remember to copy the JSON after clicking these buttons and commit to GitHub/Netlify.
+                </p>
+            </div>
+        </section>
+
+        <section id="upcoming-matches" class="card">
+            <h2>Upcoming Matches</h2>
+            <ul>
+                <li><strong>July 1st to 31st, 2025:</strong> NCL Champions Cup 2025</li>
+                </ul>
+        </section>
+
+        <section id="past-results" class="card">
+            <h2>Past Results</h2>
+            <p>No past results yet for the current season. Check back after July 1st!</p>
+            </section>
+
+        <section id="team-info" class="card">
+            <h2>About NCL Nomads</h2>
+            <p>Welcome to the official home of the NCL Premier cricket team! We are a passionate team dedicated to playing exciting cricket and fostering a strong community spirit. Follow us for live updates, match schedules, player profiles, and more.</p>
+            <h3>Our Roster:</h3>
+            <ul>
+                <li>Captain: Udit Goswami</li>
+                <li>Vice-Captain: Anurag Sharma</li>
+                <li>Key Batsmen: Udit Goswami, Anurag Sharma</li>
+                <li>Key Bowlers: Ravi Patel, Bhuvan Pandya</li>
+                </ul>
+            <h3>Contact Us:</h3>
+            <p>Email: mysticsplayground123@gmail.com</p>
+            <p>Follow us on: <a href="#">Facebook</a> | <a href="https://www.instagram.com/ncl_premier/">Instagram</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 NCL Nomads. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
