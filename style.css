@@ -215,55 +215,9 @@ footer a:hover {
 }
 /* Add these styles to your style.css file */
 
-.countdown-display {
-    text-align: center;
-    margin-bottom: 30px;
-    padding: 20px;
-    background-color: #e6f7ff; /* Light blue background */
-    border-radius: 8px;
-    border: 1px solid #cceeff;
-}
-
-.countdown-text {
-    font-size: 1.5em;
-    color: #2c3e50;
-    margin-bottom: 15px;
+5px;
     font-weight: bold;
 }
-
-.countdown-units {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-}
-
-.countdown-value {
-    font-size: 3em;
-    font-weight: 700;
-    color: #e74c3c; /* Your team's accent color */
-    display: block; /* Each value on its own line */
-    line-height: 1;
-}
-
-.countdown-label {
-    font-size: 0.9em;
-    color: #7f8c8d;
-    display: block; /* Each label on its own line */
-    margin-top: 5px;
-    text-transform: uppercase;
-}
-
-/* Ensure the match status for countdown looks good */
-#countdown-message {
-    margin-top: 25px;
-    font-size: 1.2em;
-    color: #3498db;
-    font-weight: bold;
-}
-
-/* Original styles below this line (no changes needed for existing ones) */
-/* General Body Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
